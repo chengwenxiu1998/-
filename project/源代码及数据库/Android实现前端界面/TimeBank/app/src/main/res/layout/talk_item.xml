@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+        <TextView
+            android:text="热度"
+            android:textSize="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/lv_image1"
+            android:src="@drawable/heart"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.cwx.timebank.CircleImageView
+            android:id="@+id/lv_image"
+            android:src="@drawable/p5"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:text="我新建了话题讨论，快来参与吧"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_text"
+        android:text="#代取快递#"
+        android:textSize="20dp"
+        android:textColor="#ff0000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_text1"
+        android:text="话题：想找个人帮忙取快递，不知道完后才能质量...."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TableLayout
+        android:layout_marginTop="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1,2">
+        <TableRow>
+            <Button
+                android:id="@+id/btn_join_talk"
+                android:background="@drawable/shape1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="2"
+                android:text="加入讨论区"/>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

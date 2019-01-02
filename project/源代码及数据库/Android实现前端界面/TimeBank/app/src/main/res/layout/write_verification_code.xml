@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffcc66"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/write_back"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1.5"
+            android:src="@drawable/arrow"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:text="找回密码"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:gravity="center" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="填写验证码"
+            android:textSize="23sp"
+            android:layout_marginLeft="40dp" />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#969696"
+            android:textSize="16sp"
+            android:id="@+id/write_log"
+            android:text="我们已经发送验证码短信到这个号码:"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:id="@+id/verfication_phone"
+            android:textColor="@android:color/black"
+            android:text="+86  "/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:hint="填写验证码"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:id="@+id/verfication_code_edittext"
+            android:layout_marginTop="40dp"
+            android:maxLength="4"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="接收短信大约需要48秒"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:id="@+id/submit_log"
+            android:textColor="#969696"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:id="@+id/regetcode"
+            android:visibility="invisible"
+            android:text="重新获取验证码"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:text="下一步"
+            android:id="@+id/submit_verfication"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+</LinearLayout>

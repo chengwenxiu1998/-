@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#ffcc66">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/p1"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="聊天记录"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:layout_marginRight="30dp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_clear"
+        android:background="#ffffff"
+        android:text="清空消息列表"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_delete"
+        android:background="#ffffff"
+        android:text="清空所有聊天记录"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
